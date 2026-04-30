@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&family=Work+Sans:wght@300;400;500;600;700&family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/pricedown');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-body: "Work Sans", sans-serif;
+  --font-pricedown: "Pricedown", sans-serif;
+
+  --color-primary: #ffabf3;
+  --color-primary-container: #ff00ff;
+  --color-secondary: #e2c62d;
+  --color-surface: #161213;
+  --color-surface-container: #231f20;
+  --color-surface-container-low: #1e1b1c;
+  --color-surface-container-high: #2d292a;
+  --color-on-surface: #e9e0e1;
+  --color-on-surface-variant: #dcbed4;
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  --animate-marquee: marquee 20s linear infinite;
+}
+
+@layer base {
+  html {
+    scroll-behavior: auto;
+  }
+  body {
+    @apply bg-surface text-on-surface font-body selection:bg-primary selection:text-black transition-none;
+  }
+  .disable-hover {
+    pointer-events: none !important;
+  }
+}
+
+@layer components {
+  .comic-border {
+    @apply border-r-4 border-b-4 border-black;
+  }
+  
+  .glass-panel {
+    @apply bg-surface-container/60 backdrop-blur-xl border border-white/10;
+  }
+}
+
+.pricedown {
+  font-family: var(--font-pricedown);
+  letter-spacing: -0.02em;
+}
