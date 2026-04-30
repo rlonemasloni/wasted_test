@@ -16,8 +16,15 @@ import {
 
 // --- Assets ---
 import logoImg from './assets/wasted-01.png';
-import shaybaImg from './assets/shayba.png';
 import heroBgImg from './assets/Gemini_Generated_Image_g11byfg11byfg11b.png';
+
+// Import individual flavor images
+import bananaImg from './assets/shayba.png';
+import mintImg from './assets/shayba.png';
+import powerImg from './assets/shayba.png';
+import raspberryImg from './assets/shayba.png';
+import blackberryImg from './assets/shayba.png';
+import berrymixImg from './assets/shayba.png';
 
 // --- Constants ---
 const PRODUCTS = [
@@ -25,7 +32,7 @@ const PRODUCTS = [
     id: 1,
     name: "🍌 BANANA",
     color: "#e2c62d",
-    image: shaybaImg,
+    image: bananaImg,
     desc: "Banana - Банан",
     hoverDesc: "Сладкий и насыщенный вкус спелого банана. Идеальный выбор для тех, кто любит мягкие фруктовые нотки."
   },
@@ -33,7 +40,7 @@ const PRODUCTS = [
     id: 2,
     name: "🌿 MINT",
     color: "#4ade80",
-    image: shaybaImg,
+    image: mintImg,
     desc: "Strong Mint - Мята",
     hoverDesc: "Ледяная свежесть арктической мяты. Мгновенный заряд борой энергии и чистое послевкусие."
   },
@@ -41,7 +48,7 @@ const PRODUCTS = [
     id: 3,
     name: "⚡️ POWER",
     color: "#ffabf3",
-    image: shaybaImg,
+    image: powerImg,
     desc: "Power - Энергетик",
     hoverDesc: "Взрывной вкус классического энергетика. Дает мощный импульс и держит в тонусе."
   },
@@ -49,7 +56,7 @@ const PRODUCTS = [
     id: 4,
     name: "🍓 RASPBERRY",
     color: "#f43f5e",
-    image: shaybaImg,
+    image: raspberryImg,
     desc: "Raspberry Lemonade - Малиновый лимонад",
     hoverDesc: "Освежающий микс лесной малины и лимонной цедры. Баланс сладости и легкой кислинки."
   },
@@ -57,7 +64,7 @@ const PRODUCTS = [
     id: 5,
     name: "🫐 BLACKBERRY",
     color: "#7c3aed",
-    image: shaybaImg,
+    image: blackberryImg,
     desc: "Black Berry - Чёрная смородина",
     hoverDesc: "Глубокий и терпкий аромат дикой черной смородины. Насыщенный ягодный профиль."
   },
@@ -65,7 +72,7 @@ const PRODUCTS = [
     id: 6,
     name: "🍒 BERRY MIX",
     color: "#db2777",
-    image: shaybaImg,
+    image: berrymixImg,
     desc: "Berry Mix - Ягодный микс",
     hoverDesc: "Коктейль из лучших лесных ягод. Многогранный вкус, который раскрывается с каждым мгновением."
   }
