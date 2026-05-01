@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Google AI Studio App</title>
+    <script>
+      // Fix for 'Uncaught TypeError: Cannot redefine property: ethereum'
+      // This error often occurs when browser extensions (like MetaMask) conflict with the environment.
+      window.addEventListener('error', function(e) {
+        if (e.message && e.message.includes('redefine property: ethereum')) {
+          e.stopImmediatePropagation();
+          e.preventDefault();
+        }
+      }, true);
+    </script>
   </head>
   <body>
     <div id="root"></div>
