@@ -15,7 +15,7 @@ import {
 } from 'lucide-react';
 
 // --- Assets ---
-import logoImg from './assets/wasted-01.png';
+import logoImg from './assets/wasted-02.png';
 import heroBgImg from './assets/Gemini_Generated_Image_g11byfg11byfg11b.png';
 
 // Import individual flavor images
@@ -322,7 +322,7 @@ function Navbar() {
       <nav className="flex justify-between items-center px-6 md:px-10 py-4 max-w-[1920px] mx-auto relative">
         <div className="flex items-center gap-12 grow lg:grow-0">
           <a href="#" onClick={handleScrollToSection('hero')} className="flex items-center">
-            <img src={logoImg} alt="WASTED" className="h-14 sm:h-16 md:h-20 w-auto drop-shadow-[0_0_15px_rgba(255,171,243,0.5)]" />
+            <img src={logoImg} alt="WASTED" className="h-7 sm:h-8 md:h-10 w-auto drop-shadow-[0_0_10px_rgba(255,171,243,0.5)]" />
           </a>
           
           {/* Desktop Menu */}
@@ -949,11 +949,23 @@ function Footer({ onOpenTerms }: { onOpenTerms: () => void }) {
   }, []);
 
   return (
-    <footer id="about" className="w-full pt-16 pb-0 px-8 bg-surface border-t-4 border-surface-container-low scroll-mt-[33vh]">
-      <div className="flex flex-col items-center gap-6 text-center max-w-[1920px] mx-auto mb-12">
-        <img src={logoImg} alt="WASTED" className="w-auto mx-auto drop-shadow-[0_0_30px_rgba(255,171,243,0.8)] h-32 md:h-40" />
+    <footer id="about" className="w-full pt-0 pb-10 px-4 md:px-8 bg-surface border-t border-white/5 scroll-mt-[33vh]">
+      <div className="flex flex-col items-center text-center max-w-full mx-auto">
+        <div className="w-full py-8 md:py-16 flex justify-center items-center relative overflow-visible">
+          {/* Improved Glow Effect */}
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div className="w-[80%] h-[60%] bg-primary/20 blur-[120px] rounded-full scale-150" />
+            <div className="w-[60%] h-[40%] bg-primary/10 blur-[80px] rounded-full scale-125" />
+          </div>
+
+          <img 
+            src={logoImg} 
+            alt="WASTED" 
+            className="relative z-10 w-[85%] md:w-[75%] h-auto max-h-[40vh] md:max-h-[55vh] lg:max-h-[60vh] mx-auto drop-shadow-[0_0_40px_rgba(255,171,243,0.3)] object-contain transition-all duration-700 hover:scale-[1.02]" 
+          />
+        </div>
         
-        <div className="flex flex-wrap justify-center gap-6 md:gap-10">
+        <div className="flex flex-wrap justify-center gap-6 md:gap-12 mt-2 mb-8 relative z-10">
           {['УСЛОВИЯ ИСПОЛЬЗОВАНИЯ', 'КОНФИДЕНЦИАЛЬНОСТЬ', 'КОНТАКТЫ'].map(link => (
             <button 
               key={link} 
