@@ -17,7 +17,7 @@ import {
 // --- Assets ---
 import logoImg from './assets/wasted-02.png';
 import heroBgImg from './assets/Gemini_Generated_Image_g11byfg11byfg11b.png';
-import cashVideo from './assets/cash110001-0250.webm';
+import cashVideo from './assets/cash_161213color.mp4';
 
 // Import individual flavor images
 import bananaImg from './assets/shayba.png';
@@ -827,47 +827,15 @@ function Contact() {
               viewport={{ once: true }}
               className="flex flex-col md:flex-row items-center gap-8 md:gap-4"
             >
-              {/* Animation with Halo Glow */}
+              {/* Animation */}
               <div className="relative w-48 h-48 flex-shrink-0 flex items-center justify-center">
-                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                  <motion.div
-                    animate={{
-                      scale: [0.9, 1.1, 0.9],
-                      opacity: [0.3, 0.6, 0.3],
-                    }}
-                    transition={{
-                      duration: 4,
-                      repeat: Infinity,
-                      ease: "easeInOut",
-                    }}
-                    className="w-64 h-64 rounded-full blur-3xl"
-                    style={{
-                      background: "radial-gradient(circle, transparent 35%, rgba(255, 171, 243, 0.3) 50%, rgba(255, 171, 243, 0.4) 60%, transparent 62%)",
-                    }}
-                  />
-                  <motion.div
-                    animate={{
-                      scale: [1, 1.2, 1],
-                      opacity: [0.2, 0.4, 0.2],
-                    }}
-                    transition={{
-                      duration: 3,
-                      repeat: Infinity,
-                      ease: "easeInOut",
-                    }}
-                    className="w-80 h-80 rounded-full blur-2xl absolute"
-                    style={{
-                      background: "radial-gradient(circle, transparent 40%, rgba(255, 230, 0, 0.15) 55%, transparent 70%)",
-                    }}
-                  />
-                </div>
                 <video 
                   src={cashVideo} 
                   autoPlay 
                   loop 
                   muted 
                   playsInline 
-                  className="relative z-10 w-full h-full object-contain drop-shadow-[0_0_30px_rgba(255,171,243,0.4)]" 
+                  className="relative z-10 w-full h-full object-contain" 
                 />
               </div>
 
