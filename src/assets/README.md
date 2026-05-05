@@ -1,7 +1,0 @@
-# Assets Folder
-Place all your images here.
-Current remote images:
-- Logo: https://lh3.googleusercontent.com/aida/ADBb0ujoi8jFfC3lm2bQWSC7g9UgQvrOTnySy41o42JSAyAxMJX7Wlyu_iKgEdJZaMIndpbzPvafzt0Grnjy-tDCn1GV6rfgjI-IyTHVDitkZ0CZWilVJeOOds55TpVi1AqUgZ-ci8kuiJjznRlk4QpjVu4lqzGBig3V7ZN1vragW3EXeKZsRNgV-RVSDTkIfr1Qqtvb9LAvx3Dwa6z71hQQAToL_PTN690siwlmYXLuVZUaze2zUJtrImvw9wa9x5FOnDta7qu2O58D8g
-- Hero BG: https://images.wallpapersden.com/image/download/grand-theft-auto-v-concept-art-4k_bGplZ26UmZqaraWkpJRmbmdlrWZnZ2U.jpg
-- Banana: https://lh3.googleusercontent.com/aida/ADBb0uhL6bDOAFsj7HJ0nEsoklaom4XyjPI7txSST9MEJ8LrUFQi0doQXfxA1QDxn0OK5D1fh7vEJnybQJ6iWNmW80oCHmzfGAxbSs9Ch-SrZefhONVDgJzYWuAJ-KaaL46M0MATIs9AQXEpHk2rltdOvVNwmjyYKVY1fRTRC2-DRwEOIMbo-wIQVmo_Kzmsk_qPuxWNN98l2F_3RzBuxLkpaUEMEG8q_0FKFFaZRQregM2c-QP5Q5SiVo6UHOJmy3e4ZaI7KJ2zXDAa
-...and others.

@@ -815,7 +815,7 @@ function Tutorial() {
 
 function Contact() {
   return (
-    <section id="contacts-section" className="py-32 px-6 md:px-10 relative scroll-mt-24">
+    <section id="contacts-section" className="py-32 px-6 md:px-10 relative scroll-mt-24 bg-[#151011]">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
@@ -829,14 +829,16 @@ function Contact() {
             >
               {/* Animation */}
               <div className="relative w-48 h-48 flex-shrink-0 flex items-center justify-center">
-                <video 
-                  src={cashVideo} 
-                  autoPlay 
-                  loop 
-                  muted 
-                  playsInline 
-                  className="relative z-10 w-full h-full object-contain" 
-                />
+                <div className="w-full h-full" style={{ maskImage: 'radial-gradient(circle, black 40%, transparent 80%)', WebkitMaskImage: 'radial-gradient(circle, black 40%, transparent 80%)' }}>
+                  <video 
+                    src={cashVideo} 
+                    autoPlay 
+                    loop 
+                    muted 
+                    playsInline 
+                    className="relative z-10 w-full h-full object-contain" 
+                  />
+                </div>
               </div>
 
               <div className="flex flex-col text-center md:text-left gap-2">
@@ -964,7 +966,7 @@ function Footer({ onOpenTerms }: { onOpenTerms: () => void }) {
   }, []);
 
   return (
-    <footer id="about" className="w-full pt-0 pb-10 px-4 md:px-8 bg-surface border-t border-white/5 scroll-mt-[33vh]">
+    <footer id="about" className="w-full pt-0 pb-10 px-4 md:px-8 bg-[#151011] scroll-mt-[33vh]">
       <div className="flex flex-col items-center text-center max-w-full mx-auto">
         <div className="w-full py-8 md:py-16 flex justify-center items-center relative overflow-visible">
           {/* Improved Glow Effect */}
